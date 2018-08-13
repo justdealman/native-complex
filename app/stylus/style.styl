@@ -1852,9 +1852,107 @@ button
 		&_6
 			left 0
 			top 115px
+			
+.demo
+	overflow hidden
+	position relative
+	background-color #fffae9
+	background-image linear-gradient(to right, #ffeeee 0%, #ddefbb 100%)
+	
+	&:before
+		content ''
+		position absolute
+		left 50%
+		bottom 47px
+		width 477px
+		height 429px
+		margin-left -960px
+		background url('../img/demo-before.png') no-repeat 0 0
+	
+	&:after
+		content ''
+		position absolute
+		right 50%
+		bottom 84px
+		width 429px
+		height 360px
+		margin-right -960px
+		background url('../img/demo-after.png') no-repeat 0 0
+	
+	&__row
+		position relative
+		z-index 2
+		max-width 1300px
+		padding 57px 30px 0
+		margin 0 auto
+		
+	.title-h2
+		margin-bottom 42px
+		
+	&__grid
+		display flex
+		font-size 0
+		margin 0 -18px 20px
+		
+	&__item
+		display inline-block
+		display flex
+		align-items center
+		width calc(33.33% - 36px)
+		min-height 170px
+		padding 15px 50px 25px
+		margin 0 18px 36px
+		background rgba(255,255,255,.9)
+		border-radius 8px
+		box-shadow 0 0 11px rgba(190, 198, 115, 0.24)
+		
+		p
+			width 100%
+			font-size 20px
+			line-height 26px
+			text-align center
+			margin 0
+			
+	&-form
+		font-size 0
+		padding 31px 37px 33px
+		background-color #2e2b6a
+		border-radius 12px 12px 0 0
+		
+		&__item
+			display inline-block
+			width 240px
+			margin 0 15px 15px 0
+			
+		&__controls
+			display inline-block
+			width 283px
+			margin 0 15px 15px 0
+			
+			.btn
+				margin 0
+				
+		&--message
+			display inline-block
+			width 280px
+			color #ffffff
+			font-size 16px
+			line-height 24px
+			text-align center
+			margin 1px 0 15px 41px
+			
 		
 @media (min-width 1921px)
 	.reviews
 		&:before
 			left 0
 			margin-left 0
+			
+	.demo
+		&:before
+			left 0
+			margin-left 0
+		
+		&:after
+			right 0
+			margin-right 0

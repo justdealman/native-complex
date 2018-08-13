@@ -1989,9 +1989,114 @@ button::-moz-focus-inner {
 	left: 0;
 	top: 115px;
 }
+.demo {
+	overflow: hidden;
+	position: relative;
+	background-color: #fffae9;
+	background-image: -webkit-gradient(linear, left top, right top, from(#fee), to(#ddefbb));
+	background-image: -o-linear-gradient(left, #fee 0%, #ddefbb 100%);
+	background-image: linear-gradient(to right, #fee 0%, #ddefbb 100%);
+}
+.demo:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 47px;
+	width: 477px;
+	height: 429px;
+	margin-left: -960px;
+	background: url("../img/demo-before.png") no-repeat 0 0;
+}
+.demo:after {
+	content: '';
+	position: absolute;
+	right: 50%;
+	bottom: 84px;
+	width: 429px;
+	height: 360px;
+	margin-right: -960px;
+	background: url("../img/demo-after.png") no-repeat 0 0;
+}
+.demo__row {
+	position: relative;
+	z-index: 2;
+	max-width: 1300px;
+	padding: 57px 30px 0;
+	margin: 0 auto;
+}
+.demo .title-h2 {
+	margin-bottom: 42px;
+}
+.demo__grid {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 0;
+	margin: 0 -18px 20px;
+}
+.demo__item {
+	display: inline-block;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: calc(33.33% - 36px);
+	min-height: 170px;
+	padding: 15px 50px 25px;
+	margin: 0 18px 36px;
+	background: rgba(255,255,255,0.9);
+	border-radius: 8px;
+	-webkit-box-shadow: 0 0 11px rgba(190,198,115,0.24);
+	box-shadow: 0 0 11px rgba(190,198,115,0.24);
+}
+.demo__item p {
+	width: 100%;
+	font-size: 20px;
+	line-height: 26px;
+	text-align: center;
+	margin: 0;
+}
+.demo-form {
+	font-size: 0;
+	padding: 31px 37px 33px;
+	background-color: #2e2b6a;
+	border-radius: 12px 12px 0 0;
+}
+.demo-form__item {
+	display: inline-block;
+	width: 240px;
+	margin: 0 15px 15px 0;
+}
+.demo-form__controls {
+	display: inline-block;
+	width: 283px;
+	margin: 0 15px 15px 0;
+}
+.demo-form__controls .btn {
+	margin: 0;
+}
+.demo-form--message {
+	display: inline-block;
+	width: 280px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	margin: 1px 0 15px 41px;
+}
 @media (min-width: 1921px) {
 	.reviews:before {
 		left: 0;
 		margin-left: 0;
+	}
+	.demo:before {
+		left: 0;
+		margin-left: 0;
+	}
+	.demo:after {
+		right: 0;
+		margin-right: 0;
 	}
 }
