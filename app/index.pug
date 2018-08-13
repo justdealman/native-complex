@@ -163,7 +163,20 @@ html(lang='ru')
 					.method-about.scale
 						span.method-about--message Мы вовлекаем вашего ребенка в процесс обучения через дружеское и веселое общение, и помогаем малышу осваиваться на уроках
 						img.img.contain(src='./pic/method-about.png', width='721', height='369', alt='')
-					
+		.map
+			.map-certificate
+				.map-certificate--logo
+					img.img-cover(src='./img/ies-logo.png', width='126', height='140', alt='')
+				span.map-certificate--text Компания «Native Class» обладает международной сертификацией International Education Society. Этот сертификат принимается во всем мире и является свидетельством об окончании обучения по программам General English Course for ESL Students.
+				.map-certificate--more
+					button.map-certificate--button Подробнее о сертификате
+			.map-contacts
+				p #[strong Native Class]
+				p #[span Москва, Гамсоновский переулок, дом 2, строение 1]
+				p Тел.: #[a(href='tel:+74957815476') + 7 (495) 781 5476]
+				p E-mail: #[a(href='mailto:info@nativeclass.ru') info@nativeclass.ru]
+
+			.map--core
 		include modules/footer.pug
 		script(src='./js/libs.js')
 		script(src='./js/scripts.js')
