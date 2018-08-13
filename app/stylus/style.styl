@@ -268,6 +268,7 @@ button
 			box-shadow none
 
 .hero
+	overflow hidden
 	position relative
 	display flex
 	height calc(100% - 124px)
@@ -680,6 +681,7 @@ button
 			position relative
 			width 100%
 			width calc(100% + 323px)
+			height auto
 			margin 0 0 0 -200px
 			
 		&__ages
@@ -2143,7 +2145,7 @@ button
 				color #fff9a1
 				font-size 15px
 				line-height 22px
-				self-align center
+				align-self center
 				margin 0
 				
 				span
@@ -2236,7 +2238,22 @@ button
 		img
 			display inline-block
 			margin -6px 0 0 14px
-				
+			
+.fade-bg
+	position fixed
+	left 0
+	top 0
+	z-index 1000
+	width 100%
+	height 100%
+	background rgba(0,0,0,.5)
+	transition opacity .3s ease-in, visibility .3s ease-in
+	opacity 0
+	visibility hidden
+	
+	.is-opened
+		opacity 1
+		visibility visible
 		
 @media (min-width 1921px)
 	.reviews
@@ -2252,3 +2269,1336 @@ button
 		&:after
 			right 0
 			margin-right 0
+		
+@media (max-width 1299px)
+	.header
+		&--slogan
+			display none
+
+	.hero
+		min-height 540px
+	
+		&__content
+			padding-top 20px
+			
+		&--title
+			margin 0 0 40px
+			
+			br
+				display none
+			
+		&-tip
+			display none
+			
+		&-pros
+			padding-bottom 10px
+			
+	.hero
+		.hero-video
+			display none
+			
+	.title-h2
+		br
+			display none
+			
+	.free
+		&-access
+			width 295px
+			text-align center
+			margin-left auto
+			margin-right auto
+			
+			&__controls
+				margin-top 15px
+				
+	.base
+		&__item
+			width 50%
+			
+		&-request
+			padding-left 60px
+		
+			&--pic
+				right 3%
+				
+	.method
+		&-form
+			.hero-video
+				right 20px
+				top 100%
+				margin-top -30px
+
+		&-about
+			position relative
+			right auto
+			top auto
+			margin 120px auto -20px
+			
+	.system
+		&-grid
+			&__item
+				width 100%
+				padding-left 70px
+				margin 15px 0
+				
+			&--icon
+				width 50px
+				
+				img
+					transform-origin 100% 50%
+					transform scale(0.8)
+				
+		&-content
+			&--icon
+				display none
+				
+			&__about
+				width 35%
+				padding-right 50px
+				
+			&__grid
+				padding 15px 0 25px
+				
+			&-grid
+				width calc(100% - 35% - 286px)
+				
+			&--app
+				background-position 60% 50%
+				
+	.demo
+		&:before
+		&:after
+			display none
+		
+		&-form
+			text-align center
+			
+			&--message
+				display block
+				width auto
+				margin-top 15px
+				
+	.process
+		&__row
+			&:before
+				left -100px
+				transform-origin 0 100%
+				transform scale(.8)
+			
+			&:after
+				transform-origin 100% 100%
+				transform scale(.8)
+				
+	.request
+		&--pic
+			display none
+			
+		&--description
+			display block
+			width 100%
+			max-width 640px
+			text-align center
+			padding 0
+			margin 0 auto 25px
+			
+		&-form
+			display block
+			width auto
+			text-align center
+			
+			&--welcome
+				margin-top 20px
+				
+	.plan
+		&__grid
+			margin 0 -15px
+			
+		&__item
+			padding 0 15px
+			
+		&-content
+			padding-left 25px
+			padding-right 25px
+			
+			&--icon
+				display none
+			
+	.ask
+		&__row
+			&:after
+				display none
+				
+		&__grid
+			margin-left -11px
+			margin-right -11px
+				
+		&-person
+			display none
+			
+	.teachers
+		&:after
+			display none
+			
+	.license
+		&__row
+			padding-bottom 60px
+			
+			&:after
+				display none
+		
+		&__grid
+			margin-left -15px
+			margin-right -15px
+			
+		&__item
+			width 33.33%
+			padding 0 15px
+			margin 0 0 30px
+
+	.map
+		height 600px
+
+		&-contacts
+			left 30px
+			margin-left 0
+		
+		&-certificate
+			left 30px
+			width calc(100% - 60px)
+			padding 0 30px
+			margin-left 0
+			
+			&--text
+				padding-left 40px
+				padding-right 30px
+				
+	.footer
+		&--copy
+			width 270px
+		
+@media (max-width 999px)
+
+	.header
+		&__row
+			height 60px
+			padding 0 15px 0 0
+		
+		&--logo
+			width 207px
+			height 100%
+			margin 0
+			background-position 15px 17px
+			background-size 177px auto
+			
+		&__social
+			margin 18px 11px 0 0
+			
+			&--title
+				display none
+			
+		&--phone
+			font-size 18px
+			line-height 24px
+			font-weight normal
+			margin 18px 15px 0 0
+			
+		.btn-call
+			margin-top 13px
+			
+	.social
+		margin 0 6px 0 0
+		
+		&__item
+			margin 0 4px
+	
+	.icon
+		&-social
+			width 24px
+			height 24px
+			
+	.btn
+		&-call
+			font-size 13px
+			line-height 16px
+			padding 6px 10px
+			
+			&:before
+				margin-top 3px
+				margin-bottom -5px
+				
+		&-standart
+			font-size 15px
+			line-height 24px
+			padding 13px 19px
+			
+			&_mini
+				font-size 14px
+				line-height 20px
+				padding 9px 19px
+				margin-bottom 15px
+			
+	.hero
+		display block
+		min-height 0
+		max-height none
+		height auto
+	
+		&__row
+			padding 25px 15px 5px
+			
+		&--title
+			font-size 22px
+			line-height 28px
+			margin 0 0 28px
+			
+		&__content
+			padding 0
+			margin 0 0 20px
+			
+		&-pros
+			text-align center
+			padding 20px 0 10px
+			
+			&__grid
+				margin 0 -10px
+			
+			&__item
+				width 50%
+				text-align left
+				padding 0 10px 0 60px
+				margin 0 0 20px
+				
+				p
+					font-size 14px
+					line-height 20px
+				
+			&--title
+				font-size 18px
+				line-height 24px
+				
+		&--icon
+			left 10px
+			transform scale(0.75)
+			transform-origin 0 0
+			
+	.title-h2
+		font-size 22px
+		line-height 28px
+		margin 0 0 22px
+			
+	.free
+		&__row
+			padding 25px 15px 10px
+			
+		&--pic
+			margin-top 0
+			
+		&-doc
+			margin -30px 0 20px
+			
+			&--pic
+				margin-right 15px
+				
+		&--subtitle
+			font-size 20px
+			line-height 26px
+			margin 0 0 20px
+			
+			br
+				display none
+			
+		&__list
+			margin 0 0 22px
+			
+			li
+				font-size 15px
+				line-height 22px
+				padding-left 28px
+				margin 0 0 12px
+				
+				&:before
+					transform scale(.5)
+					transform-origin 0 50%
+					
+		&--message
+			width auto
+			font-size 15px
+			line-height 22px
+			padding 9px 15px 13px
+			
+		&-access
+			margin-top 20px
+			
+		&_custom
+			padding-bottom 0
+			
+	.program
+		&__row
+			padding 25px 15px 10px
+			
+		.title-h2
+			margin-bottom 16px
+			
+		&--subtitle
+			font-size 15px
+			line-height 22px
+			margin 0 0 22px
+			
+			br
+				display none
+				
+		&__grid
+			margin 0 -10px
+			margin-top 30px
+			
+		&__col
+			width 100%
+			padding 0 10px
+			
+		&-level
+			margin 0 auto 20px
+			
+			&--title
+				font-size 15px
+				line-height 22px
+				margin 0 0 15px
+			
+			&--pic
+				width calc(100% + 160px)
+				margin-left -80px
+				
+			&__ages
+				width 80%
+				margin-left 10%
+				
+		&__list
+			max-width none
+			margin 0
+			
+			li
+				min-height 66px
+				font-size 15px
+				line-height 22px
+				padding-left 50px
+				margin 0 0 15px
+				
+				&:before
+					transform scale(.6)
+					transform-origin 0 0
+					
+		&--tip
+			margin 10px 0 20px
+			font-size 13px
+			line-height 18px
+			
+	.online
+		overflow hidden
+	
+		&__row
+			padding 25px 15px 5px
+			
+		.title-h2
+			margin-bottom 16px
+			
+		&--subtitle
+			font-size 15px
+			line-height 22px
+			margin 0 0 22px
+			
+			br
+				display none
+			
+		&__slider
+			padding-bottom 51px
+			margin 30px 0 25px
+			
+			.slick-prev
+			.slick-next
+				top auto
+				margin-top 0
+				bottom 0
+				transform scale(.75)
+			
+			.slick-prev
+				left 50%
+				margin-left -53px
+				transform-origin 100% 100%
+			
+			.slick-next
+				right 50%
+				margin-right -53px
+				transform-origin 0 100%
+			
+		&__content
+			padding 25px 20px 15px
+			
+			&--title
+				font-size 20px
+				line-height 26px
+				margin 0 0 12px
+				
+		&__list
+			li
+				font-size 15px
+				line-height 22px
+				padding-left 28px
+				margin 0 0 12px
+				
+				&:before
+					transform scale(.5)
+					transform-origin 0 50%
+					
+		.btn-standart
+			font-size 14px
+			line-height 20px
+			padding 9px 19px
+			margin-bottom 25px
+			
+	.base
+		&__row
+			padding 25px 15px 10px
+			
+		.title-h2
+			margin-bottom 16px
+			
+		&--subtitle
+			font-size 15px
+			line-height 22px
+			margin 0 0 22px
+			
+			br
+				display none
+			
+		&__grid
+			margin 25px -10px 10px
+			
+		&__item
+			height 90px
+			padding 0 10px
+			margin 0 0 30px
+				
+		&__content
+			left 10px
+			width calc(100% - 20px)
+			padding 15px 20px
+			
+			p
+				font-size 14px
+				line-height 20px
+				margin 10px 0 0 
+			
+			&:hover
+				padding-top 15px
+			
+			&:after
+				transform-origin 50% 100%
+				transform scale(.6)
+			
+			&--title
+				font-size 18px
+				line-height 24px
+				padding-left 30px
+				
+				&:before
+					transform-origin 0 0
+					transform scale(.6)
+		
+		&-request
+			padding 25px 20px 20px
+			
+			&--pic
+				display none
+				
+			&__content
+				max-width 360px
+				text-align center
+				margin 0 auto
+				
+			&--title
+				font-size 17px
+				line-height 23px
+				margin 0 0 20px
+				
+	.method
+		&__row
+			padding 25px 15px 0
+			
+		.title-h2
+			margin-bottom 16px
+			
+		&--subtitle
+			font-size 15px
+			line-height 22px
+			margin 0 0 22px
+			
+			br
+				display none
+			
+		&-form
+			margin-top 25px
+			text-align center
+			
+			&__rc
+				width 400px
+				margin-top 20px
+				margin-left 20px
+				
+		&__content
+			text-align left
+			
+			p
+				font-size 15px
+				line-height 22px
+			
+			&--title
+				font-size 17px
+				line-height 24px
+				margin 0 0 17px
+				
+		.hero-video
+			position static
+			display flex
+			width auto
+			align-items center
+			justify-content center
+			margin 25px auto 25px
+			
+			&--pic
+				display inline-block
+				
+			&--text
+				display inline-block
+				width 200px
+				font-size 14px
+				line-height 20px
+				text-align left
+				margin 0 0 0 20px
+				
+				&:after
+					display none
+				
+		
+		&-heroes
+			margin 0
+			
+			&__rc
+				display block
+				margin 0 auto 50px
+				
+		&-about
+			margin-top 85px
+			
+			&--message
+				width 400px
+				font-size 14px
+				line-height 20px
+				padding 16px 20px 20px
+				
+	.system
+		&__row
+			padding 25px 15px 10px
+			
+		.title-h2
+			margin-bottom 16px
+			
+		&--subtitle
+			font-size 15px
+			line-height 22px
+			margin 0 0 22px
+			
+			br
+				display none
+			
+		&__grid
+			margin 25px 0 20px
+			
+		&-content
+			min-height 0
+			flex-wrap wrap
+			
+			&--app
+				display none
+
+			&--title
+				font-size 22px
+				line-height 26px
+				margin 0 0 10px
+			
+			&__about
+				width 40%
+				padding 25px 20px 25px
+				
+				p
+					font-size 14px
+					line-height 20px
+					
+			&__rc
+				display block
+				width 240px
+				margin 0 auto
+				padding 0 20px 20px
+				
+			&-grid
+				width calc(100% - 40%)
+				padding 15px 0
+				
+			&--tip
+				font-size 14px
+				line-height 20px
+				margin 0 0 15px
+				
+		&-video
+			padding 0
+			
+			&--text
+				font-size 14px
+				line-height 20px
+				
+		&-grid
+			&__item
+				width 50%
+				
+				p
+					font-size 14px
+					line-height 20px
+					
+				span
+					height 40px
+					
+	.demo
+		&__row
+			padding 25px 15px 0
+			
+		.title-h2
+			margin-bottom 26px
+			
+		&__grid
+			flex-wrap wrap
+			text-align center
+			margin 0 -10px 10px
+			
+		&__item
+			min-height 100px
+			width calc(50% - 20px)
+			text-align left
+			padding 15px 20px
+			margin 0 10px 20px
+			
+			p
+				font-size 15px
+				line-height 22px
+				
+		&-form
+			padding 25px 20px 20px
+			
+			&__item
+				margin 0 5px 15px
+				
+			&__controls
+				margin-right 0
+			
+			&--message
+				font-size 15px
+				line-height 22px
+				margin 0 0 5px
+				
+	.process
+		overflow hidden
+		
+		&__row
+			padding 25px 15px 10px
+			
+			&:before
+			&:after
+				display none
+			
+		.title-h2
+			margin-bottom 16px
+			
+		&--subtitle
+			font-size 15px
+			line-height 22px
+			margin 0 0 22px
+			
+			br
+				display none
+			
+	.circle
+		margin 30px auto -120px
+		transform scale(.75)
+		transform-origin 50% 0
+		
+	.request
+		&__row
+			padding 25px 15px 25px
+			
+		&--title
+			font-size 22px
+			line-height 26px
+			margin 0 0 16px
+			
+		&--description
+			font-size 14px
+			line-height 20px
+			margin 0 auto 20px
+			
+		&-form
+			padding 0
+			margin-right 0
+			
+			&--welcome
+				font-size 16px
+				line-height 24px
+				margin-top 15px
+				
+	.plan
+		&__row
+			padding 25px 15px 15px
+			
+		.title-h2
+			margin-bottom 25px
+			
+		&__grid
+			margin 0 -10px
+			
+		&__item
+			padding 0 10px
+			margin 0 0 20px
+			
+		&-content
+			padding 25px 15px 10px
+			
+			&:hover
+				margin-top 0
+				margin-bottom 0
+			
+			&--title
+				font-size 22px
+				line-height 26px
+				
+			&--price
+				font-size 18px
+				line-height 24px
+				margin 0 0 12px
+				
+			&__list
+				li
+					font-size 14px
+					line-height 20px
+					
+			&__controls
+				margin-top 20px
+				
+				.btn
+					min-width 0
+					
+	.ask
+		&__row
+			padding 25px 15px 15px
+		
+		&--title
+			font-size 22px
+			line-height 26px
+			margin 0 0 20px
+			
+		&__grid
+			margin 0 -10px 5px
+			
+		&__item
+			min-height 80px
+			width calc(100% - 20px)
+			padding 14px 20px
+			margin 0 10px 20px
+			
+			p
+				font-size 15px
+				line-height 22px
+				
+	.teachers	
+		&__row
+			padding 25px 15px 10px
+			
+		.title-h2
+			margin-bottom 16px
+			
+		&--subtitle
+			font-size 15px
+			line-height 22px
+			margin 0 0 22px
+			
+			br
+				display none
+			
+		&__slider
+			padding 0 0 31px
+			margin -5px -10px 25px
+			
+			&:before
+				display none
+			
+			.slick-prev
+			.slick-next
+				top auto
+				margin-top 0
+				bottom 0
+				transform scale(.75)
+			
+			.slick-prev
+				left 50%
+				margin-left -53px
+				transform-origin 100% 100%
+			
+			.slick-next
+				right 50%
+				margin-right -53px
+				transform-origin 0 100%
+				
+		&__item
+			padding 0 10px
+				
+		&-person
+			max-width 300px
+			margin 0 auto
+			box-shadow -4px 2px 6px rgba(0,0,0,0.1)
+			
+			&__content
+				min-height 126px
+				padding 13px 20px 15px
+				
+				p
+					font-size 15px
+					line-height 22px
+				
+			&--name
+				font-size 20px
+				line-height 26px
+				margin 0 0 6px
+				
+	.reviews
+		&__row
+			padding 25px 15px 10px
+			
+		&__grid
+			margin 30px -10px 0
+			
+		&__item
+			padding 0 10px
+			margin 0 0 20px
+			
+		&-content
+			&--pic
+				margin 0 0 8px
+				
+				&:after
+					transform scale(.75)
+				
+			&--text
+				font-size 15px
+				line-height 22px
+				
+	.license
+		&__row
+			padding 25px 15px 10px
+			
+		&__grid
+			margin 0 -10px
+			
+		&__item
+			padding 0 10px
+			margin 0 0 20px
+			
+		&--pic
+			width auto
+			border-width 4px
+			padding 0
+			
+			span
+				border-radius 0
+			
+	.map
+		height auto
+		border-width 0
+		
+		&-certificate
+			flex-wrap wrap
+			position static
+			width auto
+			padding 15px
+			border-radius 0
+			
+			&--text
+				width calc(100% - 126px)
+				padding 5px 0 5px 20px
+			
+			&--more
+				display block
+				padding 15px 0 10px
+				margin 0 auto
+			
+		&-contacts
+			position static
+			width auto
+			min-height 0
+			padding 25px 15px
+			
+		&--core
+			position static
+			height 420px
+			
+	.footer
+		&__row
+			padding 25px 5px
+			
+		&--logo
+			width 200px
+			margin-top -5px
+			background-size 200px auto
+			
+		&__col
+			padding 0 10px
+			
+		&--copy
+			margin-top 10px
+			
+		&__nav
+			margin 0 0 0 -10px
+			
+			&--title
+				display none
+			
+		&__social
+			margin 18px 11px 0 0
+			
+			&--title
+				display none
+			
+		&--phone
+			font-size 18px
+			line-height 24px
+			font-weight normal
+			margin 0
+			
+		.btn-call
+			margin -3px 0 0 15px
+			
+		&--author
+			margin 20px 0 0
+			
+			img
+				height 20px
+				width auto
+				margin -2px 0 0 4px
+
+@media (max-width 767px)
+	.header
+		&__row
+			position relative
+			height 100px
+			
+		&--logo
+			height 55px
+			
+		&--phone
+			position absolute
+			left 15px
+			bottom 17px
+			
+		&__social
+			position absolute
+			right 5px
+			top 16px
+			margin 0
+			
+		.btn-call
+			position absolute
+			right 15px
+			bottom 16px
+			
+	.btn
+			
+		&-call
+			font-size 11px
+			line-height 13px
+			padding 5px 10px 6px
+			margin 0
+			box-shadow 0 2px 0 #e30e1c
+			
+			&:before
+				display none
+			
+	.social
+		&--item
+			margin 0 4px 8px
+			
+	.hero
+		background-position 32.5% 50% !important
+		&-pros
+			&__item
+				width 100%
+				
+	.free
+		&__grid
+			margin 0 -10px
+		
+		&__col
+			width 100%
+			padding 0 10px
+			
+		&-access
+			.bth-standart
+				font-size 15px
+				line-height 22px
+				
+		&-doc
+			margin-top -10px
+			
+		&_custom
+			padding-bottom 10px
+			
+	.program
+		&-level
+			display none
+			
+		&__grid
+			margin-top 20px
+			
+	.online
+		&__item
+			display block
+			
+		&__col
+			display block
+			width 100%
+			min-height 0
+			
+	.base
+		&__item
+			min-height 0
+			height auto
+			min-height 0
+			width 100%
+			margin 0 0 15px
+			
+		&__content
+			position static
+			width auto
+			margin-top 0 !important
+			
+			&:after
+				display none
+				
+		&-request
+			margin 0 -15px -10px
+			padding 25px 15px 20px
+			border-radius 0
+			
+	.method
+		&-form
+			&--pic
+				display block
+				width 100%
+				margin 0 auto 20px
+				box-shadow -4px 3px 6px rgba(0,0,0,0.1)
+				
+				&:after
+					display none
+				
+			&__rc
+				display block
+				width auto
+				margin 0
+				
+		&-heroes
+			min-height 0
+			
+			&__rc
+				display block
+				width auto
+				margin-bottom 0
+				
+			.btn
+				margin-top 0
+				
+		.hero-video
+			display block
+			
+			&--pic
+				display block
+				margin 0 auto 10px
+				
+			&--text
+				display block
+				margin 0 auto
+				
+		&-about
+			display none
+			
+	.system
+		&-content
+			display block
+			
+			&__about
+				display block
+				width auto
+				padding-bottom 15px
+				
+				p
+					margin 0
+				
+			&-grid
+				width auto
+				padding 0 15px 10px
+				
+			&__rc
+				padding-bottom 25px
+		
+		&-grid
+			&__item
+				width 100%
+				
+	.demo
+		&__grid
+			margin 0 0 10px
+			
+		&__item
+			min-height 0
+			width 100%
+			padding 15px
+			margin 0 0 15px
+			
+		&-form
+			padding 25px 15px 20px
+			margin 0 -15px
+			border-radius 0
+			
+			&__item
+				display block
+				margin 0 auto 15px
+				
+			&__controls
+				width 280px
+				margin 0 auto 15px
+	
+	.circle
+		transform scale(.58) translateX(-50%)
+		margin-right 0
+		margin-left 50%
+		transform-origin 0 0
+		margin-bottom -240px
+		margin-top 25px
+		
+	.request
+		&-form
+			&__item
+				display block
+				margin 0 auto 15px
+				
+			&__controls
+				display block
+				width 280px
+				margin 0 auto
+
+			&--welcome
+				max-width 200px
+				margin-left auto
+				margin-right auto
+				
+	.plan
+		&__item
+			width 100%
+			
+	.ask
+		&__grid
+			display block
+			margin 0 0 25px
+		
+		&__item
+			min-height 0
+			width 100%
+			margin 0 0 15px
+			
+	.teachers
+		&__slider
+			padding-bottom 51px
+			margin-top 25px
+			
+			.slick-list
+				padding 0
+				
+		&-person
+			box-shadow none
+			
+	.reviews
+		&__item
+			width 100%
+			
+	.license
+		&__grid
+			text-align center
+			
+		&__item
+			width 50%
+			
+	.map
+		display block
+		
+		&-certificate
+			padding-bottom 20px
+			
+			&--logo
+				display block
+				margin 0 auto 15px
+				
+			&--text
+				display block
+				width auto
+				padding 0
+				margin 0 0 5px
+				
+		&-contacts
+			padding 20px 15px 5px
+			
+		&--core
+			height 320px
+
+	.footer
+		&__row
+			display block
+			text-align center
+			padding 20px 15px 5px
+			
+		.social
+			margin 0
+			
+		&--logo
+			margin 0 auto 15px
+			
+		&__nav
+			display block
+			width auto
+			margin 0 0 10px
+			
+		&--phone
+			display block
+			margin 0 0 15px
+			
+		&__col
+			display block
+			padding 0
+			
+		.btn-call
+			margin 0 0 15px
+			
+		&--copy
+			margin 0 auto 15px
+			
+		&--author
+			text-align center
+			margin 0 0 15px
+		
+		
+@media (min-width 768px)		
+	.online
+		&__col
+			height auto !important
+	

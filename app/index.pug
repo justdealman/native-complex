@@ -37,14 +37,14 @@ html(lang='ru')
 			.free__row
 				h2.title-h2 Запишитесь на первый бесплатный урок #[br] по английскому
 				.free__grid
-					.free__col
+					.free__col(data='1')
 						img.free--pic(src='./img/free-pic.png', width='630', height='375', alt='')
 						.free-doc
 							a.free-doc--pic(href='javascript:void(0);')
 								img(src='./pic/license.jpg', width='129', height='188', alt='')
 							.free-doc--text
 								p Заключение на программу Департамента #[br] Образования города Москвы
-					.free__col
+					.free__col(data='2')
 						.free--subtitle На первом уроке:
 						ul.free__list
 							li Вы и ребенок познакомитесь с преподавателем и форматом обучения
@@ -81,7 +81,7 @@ html(lang='ru')
 			.online__row
 				h2.title-h2 Формат online-обучения эффективнее, #[br] безопаснее и удобнее традиционных способов #[br] образования
 				span.online--subtitle Ваш ребенок будет учиться в комфортных условиях и в удобное время
-				.online__slider
+				.online__slider(data-ratio='0.7613')
 					.online__item
 						.online__col
 							.online__content
@@ -90,10 +90,10 @@ html(lang='ru')
 									li Вы полностью контролируете своего ребенка и те знания, которые он получает
 									li Ребенку не нужно никуда ходить и поздно возвращаться с уроков или дополнительных занятий
 									li Ребенок не будет отвлекаться на непослушных сверстников. Никто не будет мешать его развитию
-						.online__col
+						.online__col.scale
 							img.img-cover(src='./pic/online-1.jpg', width='620', height='472', alt='')
 					.online__item
-						.online__col
+						.online__col.scale
 							.online__content
 								span.online__content--title Безопасность
 								ul.online__list
@@ -162,7 +162,7 @@ html(lang='ru')
 							button.btn.btn-standart.btn-standart_mini Записаться на бесплатный урок
 					.method-about.scale
 						span.method-about--message Мы вовлекаем вашего ребенка в процесс обучения через дружеское и веселое общение, и помогаем малышу осваиваться на уроках
-						img.img.contain(src='./pic/method-about.png', width='721', height='369', alt='')
+						img.img-contain(src='./pic/method-about.png', width='721', height='369', alt='')
 		section.system
 			.system__row
 				h2.title-h2 Для того, чтобы заниматься с ребенком, вам #[br] не нужно знать язык
@@ -492,11 +492,11 @@ html(lang='ru')
 					.license__item
 						a(href='#').license--pic
 							span.scale
-								img.img-cove(src='./pic/license-1.jpg', width='270', height='384' alt='')
+								img.img-cover(src='./pic/license-1.jpg', width='270', height='384' alt='')
 					.license__item
 						a(href='#').license--pic
 							span.scale
-								img.img-cove(src='./pic/license-2.jpg', width='270', height='384' alt='')
+								img.img-cover(src='./pic/license-2.jpg', width='270', height='384' alt='')
 					.license__item
 						a(href='#').license--pic
 							span.scale
@@ -505,9 +505,9 @@ html(lang='ru')
 			.free__row
 				h2.title-h2 Запишитесь на первый бесплатный урок #[br] по английскому
 				.free__grid
-					.free__col
+					.free__col(data='1')
 						img.free--pic(src='./img/free-pic-2.png', width='577', height='415', alt='')
-					.free__col
+					.free__col(data='2')
 						.free--subtitle На первом уроке:
 						ul.free__list
 							li Вы и ребенок познакомитесь с преподавателем и форматом обучения
@@ -531,7 +531,6 @@ html(lang='ru')
 				p #[span Москва, Гамсоновский переулок, дом 2, строение 1]
 				p Тел.: #[a(href='tel:+74957815476') + 7 (495) 781 5476]
 				p E-mail: #[a(href='mailto:info@nativeclass.ru') info@nativeclass.ru]
-
 			.map--core
 		include modules/footer.pug
 		script(src='./js/libs.js')

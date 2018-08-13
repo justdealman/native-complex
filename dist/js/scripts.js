@@ -68,15 +68,39 @@ $(function() {
 		infinite: true,
 		cssEase: 'ease',
 		speed: 300,
-		adaptiveHeight: true
+		adaptiveHeight: true,
+		responsive: [
+			{
+				breakpoint: 1299,
+				settings: {
+					slidesToShow: 2
+				}
+			}, {
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
 	});
 
 	function startApp() {
 		detectDevice();
 		if ( justSwitched ) {
 			if ( isMobile ) {
-
+				$('.free').each(function() {
+					var l = $(this).find('.free__col[data="1"]');
+					var r = $(this).find('.free__col[data="2"]');
+					l.detach().insertAfter(r);
+				});
+				$('.footer--copy').detach().insertBefore($('.footer--author'));
 			} else {
+				$('.free').each(function() {
+					var l = $(this).find('.free__col[data="1"]');
+					var r = $(this).find('.free__col[data="2"]');
+					l.detach().insertBefore(r);
+				});
+				$('.footer--copy').detach().insertAfter($('.footer--logo'));
 			}
 		}
 		setRatio();
