@@ -1457,12 +1457,19 @@ button
 		bottom 0
 		width 232px
 		height 297px
-		background url('../pic/ask-person.png') no-repeat 0 0
+		
+		img
+			position absolute
+			left 0
+			bottom 0
+			width 100%
+			height auto
 		
 		&__content
 			position absolute
 			left 170px
 			top 7px
+			z-index 1
 			width 200px
 			text-align left
 			
@@ -1999,7 +2006,7 @@ button
 			&_2
 				right 193px
 				top 0
-				width 50px
+				width 150px
 				height 91px
 				background-image url('../img/system-animals-icon-2.png')
 			
@@ -2155,6 +2162,80 @@ button
 			img
 				max-width 100%
 				height auto
+				
+.footer
+	background-color #252443
+	background-image linear-gradient(-45deg, rgba(93, 71, 218, 0.3) 0%, rgba(93, 71, 218, 0) 100%)
+	
+	&__row
+		display flex
+		justify-content space-between
+		max-width 1300px
+		font-size 0
+		padding 40px 15px
+		margin 0 auto
+		
+	&__col
+		display inline-block
+		padding 0 15px
+		
+	&--logo
+		display block
+		width 250px
+		height 41px
+		background url('../img/footer-logo.png') no-repeat 0 0
+		
+	&--copy
+		display block
+		color #ccc7f1
+		font-size 14px
+		line-height 20px
+		margin 35px 0 0
+		
+	&__nav
+		display inline-block
+		text-align center
+		margin -17px 0 0
+		
+		&--title
+			display block
+			color #ffffff
+			font-size 13px
+			lne-height 18px
+			font-weight 600
+			font-family f-spectral
+			text-align center
+			text-transform uppercase
+			white-space nowrap
+			margin 0 0 7px
+			
+	&--phone
+		display inline-block
+		color #ccc7f1
+		font-size 24px
+		line-height 30px
+		font-weight 300
+		margin 4px 0 0 26px
+		
+	.btn-call
+		display inline-block
+		color #ffffff
+		margin -2px 0 0 26px
+		background-color transparent
+		border-color #ccc7f1
+		box-shadow 0 3px 0 #ffffff
+		
+	&--author
+		display block
+		color #ccc7f1
+		font-size 14px
+		line-height 20px
+		text-align right
+		margin 28px 0 0
+		
+		img
+			display inline-block
+			margin -6px 0 0 14px
 				
 		
 @media (min-width 1921px)
