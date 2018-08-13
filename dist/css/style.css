@@ -1374,3 +1374,84 @@ button::-moz-focus-inner {
 	background-color: #e8e8e8;
 	border-radius: 12px;
 }
+.reviews {
+	position: relative;
+	background: #f5f5f5;
+}
+.reviews:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 11.6666%;
+	width: 293px;
+	height: 262px;
+	margin-left: -960px;
+	background: url("../img/review-dog.png") no-repeat 0 100%;
+}
+.reviews__row {
+	max-width: 1300px;
+	padding: 48px 30px 51px;
+	margin: 0 auto;
+}
+.reviews__grid {
+	font-size: 0;
+	margin: 61px -18px 0;
+}
+.reviews__item {
+	display: inline-block;
+	width: 33.33%;
+	padding: 0 18px;
+	margin: 0 0 42px;
+}
+.reviews-content {
+	display: block;
+}
+.reviews-content--pic {
+	overflow: hidden;
+	position: relative;
+	display: block;
+	height: 250px;
+	margin: 0 0 13px;
+	border-radius: 12px;
+	-webkit-box-shadow: -10px 6px 12px rgba(0,0,0,0.15);
+	box-shadow: -10px 6px 12px rgba(0,0,0,0.15);
+}
+.reviews-content--pic:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+}
+.reviews-content--pic:after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 54px;
+	height: 54px;
+	margin: -27px 0 0 -27px;
+	background: url("../img/video-play-icon.png") no-repeat 50% 50%;
+	opacity: 0.5;
+	-webkit-transition: opacity 0.2s ease-in;
+	-o-transition: opacity 0.2s ease-in;
+	transition: opacity 0.2s ease-in;
+}
+.reviews-content:hover .reviews-content--pic:after {
+	opacity: 0.8;
+}
+.reviews-content--text {
+	display: block;
+	color: #000;
+	font-size: 18px;
+	line-height: 25px;
+	margin: 0;
+}
+@media (min-width: 1921px) {
+	.reviews:before {
+		left: 0;
+		margin-left: 0;
+	}
+}
