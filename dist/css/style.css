@@ -2086,6 +2086,226 @@ button::-moz-focus-inner {
 	text-align: center;
 	margin: 1px 0 15px 41px;
 }
+.system__row {
+	max-width: 1300px;
+	padding: 74px 30px 38px;
+	margin: 0 auto;
+}
+.system .title-h2 {
+	margin-bottom: 32px;
+}
+.system--subtitle {
+	display: block;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	margin: 0 0 25px;
+}
+.system__grid {
+	margin: 47px 0 30px;
+}
+.system__item {
+	margin: 0 0 12px;
+}
+.system-content {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	color: #fff;
+	font-size: 0;
+	min-height: 250px;
+	background-color: #2e2b6a;
+	background-image: -o-linear-gradient(135deg, rgba(93,71,218,0.3) 0%, rgba(93,71,218,0) 100%);
+	background-image: linear-gradient(-45deg, rgba(93,71,218,0.3) 0%, rgba(93,71,218,0) 100%);
+	border-radius: 16px;
+}
+.system-content--app {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url("../img/system-app.png") no-repeat 50% 50%;
+	background-size: auto 100%;
+}
+.system-content--icon {
+	position: absolute;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.system-content--icon_1 {
+	left: 223px;
+	bottom: 0;
+	width: 93px;
+	height: 113px;
+	background-image: url("../img/system-animals-icon-1.png");
+}
+.system-content--icon_2 {
+	right: 193px;
+	top: 0;
+	width: 50px;
+	height: 91px;
+	background-image: url("../img/system-animals-icon-2.png");
+}
+.system-content--icon_3 {
+	left: 292px;
+	bottom: 0;
+	width: 117px;
+	height: 86px;
+	background-image: url("../img/system-animals-icon-3.png");
+}
+.system-content--icon_4 {
+	right: 280px;
+	bottom: 0;
+	width: 132px;
+	height: 129px;
+	background-image: url("../img/system-animals-icon-4.png");
+}
+.system-content__about {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	width: 29%;
+	padding: 35px 30px 35px 45px;
+}
+.system-content__about p {
+	font-size: 17px;
+	line-height: 24px;
+}
+.system-content--title {
+	display: block;
+	font-size: 28px;
+	line-height: 30px;
+	font-weight: 500;
+	font-family: 'Spectral SC', sans-serif;
+	letter-spacing: -1px;
+	margin: 0 0 11px;
+}
+.system-content__rc {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	width: 286px;
+	padding: 15px 36px 42px 30px;
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+.system-content__rc .btn {
+	width: 100%;
+	margin: 0;
+}
+.system-content--tip {
+	display: block;
+	color: #fffefe;
+	font-size: 15px;
+	line-height: 21px;
+	font-style: italic;
+	margin: 0 0 20px;
+}
+.system-content__grid {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	-ms-flex-item-align: center;
+	align-self: center;
+	width: calc(100% - 29% - 286px);
+	padding: 0 0 10px;
+}
+.system-video {
+	padding: 15px 0;
+}
+.system-video--pic {
+	position: relative;
+	width: 125px;
+	padding: 5px;
+	margin: 0 0 0 86px;
+	background: url("../img/system-video-bg.png") no-repeat 0 0;
+}
+.system-video--pic span {
+	position: relative;
+	display: block;
+	height: 115px;
+	border-radius: 50%;
+}
+.system-video--pic span:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 33px;
+	height: 35px;
+	margin: -18px 0 0 -17px;
+	background: url("../img/play-icon.png") no-repeat 0 0;
+	background-size: 100% 100%;
+	opacity: 0.68;
+	-webkit-transition: opacity 0.2s ease-in;
+	-o-transition: opacity 0.2s ease-in;
+	transition: opacity 0.2s ease-in;
+}
+.system-video--pic:hover span:before {
+	opacity: 0.9;
+}
+.system-video--text {
+	position: relative;
+	display: block;
+	color: #fff3f3;
+	font-size: 15px;
+	line-height: 21px;
+	font-style: italic;
+	margin: 11px 0 0;
+}
+.system-video--text:before {
+	content: '';
+	position: absolute;
+	left: 47px;
+	top: -70px;
+	width: 34px;
+	height: 62px;
+	background: url("../img/system-video-arrow.png") no-repeat 0 0;
+}
+.system-grid {
+	font-size: 0;
+}
+.system-grid__item {
+	position: relative;
+	display: inline-block;
+	min-height: 44px;
+	width: 50%;
+	padding: 0 30px 0 88px;
+	margin: 28px 0;
+}
+.system-grid__item p {
+	display: table;
+	width: 100%;
+	max-width: 150px;
+	color: #fff9a1;
+	font-size: 15px;
+	line-height: 22px;
+	self-align: center;
+	margin: 0;
+}
+.system-grid__item p span {
+	display: table-cell;
+	height: 44px;
+	vertical-align: middle;
+}
+.system-grid--icon {
+	position: absolute;
+	top: 0;
+	left: -5px;
+	width: 65px;
+	display: block;
+	text-align: right;
+}
+.system-grid--icon img {
+	max-width: 100%;
+	height: auto;
+}
 @media (min-width: 1921px) {
 	.reviews:before {
 		left: 0;
