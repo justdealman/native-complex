@@ -1,0 +1,82 @@
+doctype html
+html(lang='ru')
+	title Комплексная программа по английскому языку
+	meta(charset='utf-8')
+	meta(name='viewport', content='width=device-width, user-scalable=yes')
+	link(href='./css/style.css', rel='stylesheet')
+	body
+		include modules/header.pug
+		section.hero
+			.hero__row
+				article.hero__content
+					h1.hero--title Комплексная программа по английскому языку для самостоятельных занятий родителями #[br] с детьми от 4 до 8 лет
+					button.btn.btn-standart Попробовать бесплатно
+				.hero-pros
+					.hero-pros__grid
+						.hero-pros__item
+								i.hero--icon.hero--icon_1
+								span.hero-pros--title Не нужно никуда ехать
+								p Вы сами сможете заниматься с ребенком в удобное для вас время
+						.hero-pros__item
+								i.hero--icon.hero--icon_2
+								span.hero-pros--title Все преподаватели - носители языка
+								p с международными дипломами и сертификатами
+						.hero-pros__item
+								i.hero--icon.hero--icon_3
+								span.hero-pros--title Вам не нужно знать язык
+								p Мы даем подробные рекомендации по занятиям с ребенком
+				.hero-video
+					.hero-video--pic
+						span
+							img.img-cover(src='./pic/hero-video.png', width='157', height='157', alt='')
+					span.hero-video--text Посмотрите двухминутное видео обращение руководителя и узнайте, как мы относимся к своей работе
+			.hero-tip
+				span.hero-tip--text Ваш ребенок заговорит на английском языке уже с первого месяца!
+			img.img-cover(src='./img/hero-bg.jpg', width='1920', height='844', alt='')
+		section.free
+			.free__row
+				h2.title-h2 Запишитесь на первый бесплатный урок #[br] по английскому
+				.free__grid
+					.free__col
+						img.free--pic(src='./img/free-pic.png', width='630', height='375', alt='')
+						.free-doc
+							a.free-doc--pic(href='javascript:void(0);')
+								img(src='./pic/license.jpg', width='129', height='188', alt='')
+							.free-doc--text
+								p Заключение на программу Департамента #[br] Образования города Москвы
+					.free__col
+						.free--subtitle На первом уроке:
+						ul.free__list
+							li Вы и ребенок познакомитесь с преподавателем и форматом обучения
+							li Получите рекомендации по обучению ребенка
+							li Ребенок освоит первые базовые элементы английского языка и начнет их применять
+						.free-access
+							input.free-access--phone(type='text', placeholder='Ваш телефон *')
+							.free-access__controls
+								button.btn.btn-standart Получить доступ к уроку
+								span.free-access--tip Нажимая, Вы принимаете условия #[a(href='javascript:void(0);') Соглашения]
+						span.free--message Куратор курса перезвонит Вам, чтобы уточнить точную дату проведения урока
+		section.program
+			.program__row
+				h2.title-h2 Авторская программа обучения #[br] Native Class разработана специально #[br] для детей от 4 до 8 лет
+				span.program--subtitle В программе учитываются особенности обучения возрастной категории - ваш #[br] ребенок начинает говорить на английском после 1 урока
+				.program__grid
+					.program__col
+						.program-level
+							span.program-level--title Уровень усвоения языка
+							.program-level__graph
+								ul.program-level__ages
+									li 4 года
+									li 6 лет
+									li 8 лет
+									li 10 лет
+								img.program-level--pic(src='./img/level-graph.png', width='903', height='407', alt='')
+					.program__col
+						ul.program__list
+							li Только в этот период мозг ребенка усваивает иностранный язык в 2-3 раза эффективнее, чем в подростковом возрасте
+							li 100% детей до 8 лет усваивают любой, новый для них, язык без приобретения акцента. После 12 лет только 2% людей могут изучить иностранный язык и говорить на нем без акцента
+							li При изучении 2-х языков одновременно у ребенка в этом возрасте улучшаются общие умственные показатели на 18%*		
+				span.program--tip * - Согласно исследованиям американского Университетского совета, #[br] администрирующим тесты SAT, 2007 год
+		include modules/footer.pug
+		script(src='./js/libs.js')
+		script(src='./js/scripts.js')

@@ -1,0 +1,728 @@
+// Fonts
+
+@import './mixins/fonts.styl'
+webfont('Segoe UI', 'segoeui-regular', normal)
+webfont('Segoe UI', 'segoeui-italic', normal, italic)
+webfont('Segoe UI', 'segoeui-semilight', 200)
+webfont('Segoe UI', 'segoeui-light', 300)
+webfont('Segoe UI', 'segoeui-semibold', 600)
+webfont('Spectral SC', 'spectralsc-medium', 500)
+webfont('Spectral SC', 'spectralsc-semibold', 600)
+webfont('Spectral SC', 'spectralsc-bold', bold)
+
+// Variables
+
+colorBlack = #121212
+colorBlue = #1e2244
+colorWhite = #ffffff
+colorRed = #e30e1c
+f-segoe = 'Segoe UI', sans-serif
+f-spectral = 'Spectral SC', sans-serif
+
+// Default
+
+html
+	height 100%
+	*
+		max-height 1000000px
+		vertical-align top
+		box-sizing border-box
+
+	*:before
+	*:after
+		vertical-align top
+		box-sizing border-box
+
+body
+	width 100%
+	height 100%
+	color colorBlack
+	font-size 12px
+	line-height 16px
+	font-family f-segoe
+	padding 0
+	margin 0
+	background #ffffff
+	-webkit-tap-highlight-color transparent
+
+p
+	text-indent 0
+	padding 0
+	margin 0 0 16px
+
+table
+	margin 0 0 16px
+	border-collapse collapse
+
+	td
+		padding 0
+
+:focus
+	outline none
+
+img
+	padding 0
+	margin 0
+	border 0
+
+a
+	color colorBlack
+	text-decoration none
+
+	&:hover
+		text-decoration none
+
+form
+	margin 0
+
+ul
+	margin 0 0 10px 16px
+	padding 0
+
+	li
+		padding 0
+		list-style none
+
+ol
+	margin 0 0 10px 18px
+	padding 0
+
+	li
+		padding 0 0 0 16px
+
+input
+select
+textarea
+	font-size 12px
+	font-family f-segoe
+	padding 0
+	margin 0
+	background none
+	border 0
+	box-sizing border-box
+
+textarea
+	overflow auto
+
+button
+	font-family f-segoe
+	margin 0
+	border 0
+	box-sizing border-box
+
+	&::-moz-focus-inner
+		padding 0
+		border 0
+
+::-webkit-input-placeholder
+	color #666666
+
+:-moz-placeholder
+	color #666666
+
+::-moz-placeholder
+	color #666666
+
+:-ms-input-placeholder
+	color #666666
+
+.img-cover,
+.img-contain
+	display none !important
+
+// Libs
+
+@import '../css/libs.css'
+
+// Core
+
+.header
+	background #ffffff
+
+	&__row
+		display flex
+		justify-content space-between
+		max-width 1300px
+		height 124px
+		font-size 0
+		padding 0 30px
+		margin 0 auto
+
+	&__col
+		display inline-block
+
+	&--logo
+		display inline-block
+		width 293px
+		height 64px
+		margin 33px 18px 0 -10px
+		background url('../img/logo.png') no-repeat 10px 10px
+		background-size 273px 44px
+
+	&--slogan
+		display inline-block
+		width 170px
+		color #292a31
+		font-size 15px
+		line-height 22px
+		font-weight 500
+		font-family f-spectral
+		text-transform uppercase
+		margin 42px 0 0
+
+	&__social
+		display inline-block
+		text-align center
+		margin 28px 42px 0 0
+
+		&--title
+			display block
+			font-size 13px
+			line-height 20px
+			font-weight 600
+			font-family f-spectral
+			text-transform uppercase
+			margin 0 0 5px
+
+	&--phone
+		display inline-block
+		color #1e1e1e
+		font-size 24px
+		line-height 30px
+		font-weight 300
+		margin 51px 26px 0 0
+
+	.btn-call
+			margin-top 45px
+
+.social
+		font-size 0
+		margin 0 -5px
+
+		&--item
+			display inline-block
+			margin 0 5px 10px
+
+.icon-social
+	display inline-block
+	width 32px
+	height 32px
+	background-position 0 0
+	background-repeat no-repeat
+	background-size 100% 100%
+
+	&_vk
+		background-image url('../img/vk-icon.png')
+
+	&_fb
+		background-image url('../img/fb-icon.png')
+
+	&_ig
+		background-image url('../img/ig-icon.png')
+
+.btn
+	display inline-block
+	cursor pointer
+
+	&-call
+		color colorRed
+		font-size 14px
+		line-height 20px
+		font-weight 600
+		text-transform uppercase
+		padding 10px 17px
+		background colorWhite
+		border 1px solid colorRed
+		border-radius 6px
+		box-shadow 0 3px 0 colorRed
+		transition box-shadow .1s ease-in, transform .1s ease-in
+
+		&:hover
+			transform translateY(2px)
+			box-shadow none
+
+		&:before
+			content ''
+			display inline-block
+			width 12px
+			height 12px
+			margin 4px 9px 4px 2px
+			background url('../img/phone-icon-red.png') no-repeat 0 0
+
+	&-standart
+		color colorWhite
+		font-size 20px
+		line-height 24px
+		font-weight 600
+		letter-spacing 0
+		text-transform uppercase
+		padding 22px 38px
+		background-color #e30e1c
+		background-image linear-gradient(to bottom, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 85%)
+		border-radius 6px
+		box-shadow 0 5px 0 #830b13
+		transition box-shadow .1s ease-in, transform .1s ease-in
+
+		&:hover
+			transform translateY(4px)
+			box-shadow none
+
+.hero
+	position relative
+	display flex
+	height calc(100% - 124px)
+	min-height 640px
+	max-height 956px
+	background-color #1e2244
+
+	&--icon
+		position absolute
+		left 15px
+		display block
+		background-repeat no-repeat
+		background-position 0 0
+
+		&_1
+			top 6px
+			width 44px
+			height 44px
+			background-image url('../img/hero-icon-1.png')
+
+		&_2
+			top 7px
+			width 43px
+			height 43px
+			background-image url('../img/hero-icon-2.png')
+
+		&_3
+			top 5px
+			width 45px
+			height 46px
+			background-image url('../img/hero-icon-3.png')
+
+	&:before
+		content ''
+		position absolute
+		left 0
+		top 0
+		width 100%
+		height 100%
+		background rgba(0, 0, 0, .7)
+
+	&__row
+		position relative
+		display flex
+		flex-wrap wrap
+		max-width 1300px
+		color colorWhite
+		padding 26px 30px
+		margin 0 auto
+
+	&-video
+		position absolute
+		right 0
+		top 50%
+		margin-top 37px
+		transform translateY(-50%)
+
+		&--pic
+			position relative
+			width 170px
+			height 170px
+			cursor pointer
+			padding 7px
+			background url('../img/hero-video-border.svg') no-repeat 0 0
+
+			span
+				position relative
+				display block
+				height 156px
+				background-color #ffffff
+				border-radius 50%
+
+				&:before
+					content ''
+					position absolute
+					left 50%
+					top 50%
+					width 44px
+					height 48px
+					margin -24px 0 0 -20px
+					background url('../img/play-icon.png') no-repeat 0 0
+					opacity 0.68
+					transition opacity .2s ease-in
+
+			&:hover
+				span
+					&:before
+						opacity 0.9
+
+		&--text
+			position relative
+			display block
+			width 250px
+			color #fff9a1
+			font-size 14px
+			line-height 20px
+			font-style italic
+			margin 63px 0 0 -34px
+			
+			&:after
+				content ''
+				position absolute
+				right 34px
+				top -77px
+				width 25px
+				height 70px
+				background url('../img/hero-text-line.svg') no-repeat 100% 0
+
+	&__content
+		width 100%
+		max-width 1120px
+		align-self center
+		color colorWhite
+		text-align center
+		padding 50px 0 20px
+		margin 0 auto
+
+	&--title
+		display block
+		font-size 40px
+		line-height 52px
+		font-weight 600
+		font-family f-spectral
+		letter-spacing -1px
+		padding 0
+		margin 0 0 91px
+
+	&-pros
+		width 100%
+		align-self flex-end
+		padding 20px 0 30px
+		margin 0 auto
+
+		&__grid
+			font-size 0
+			margin 0 -15px
+
+		&--title
+			display block
+			font-size 24px
+			line-height 28px
+			font-weight 600
+			margin 0 0 6px
+
+		&__item
+			position relative
+			display inline-block
+			width 33.33%
+			padding 0 15px 0 75px
+
+			p
+				font-size 15px
+				line-height 22px
+				margin 0
+
+	&-tip
+		position absolute
+		left 0
+		top 50%
+		z-index 1
+		width 133px
+		height 244px
+		margin-top 62px
+		background url('../img/hero-tip-bg.png') no-repeat 0 0
+		transform translateY(-50%)
+		
+		&--text
+			display flex
+			align-items center
+			position absolute
+			left 153px
+			top -53px
+			width 344px
+			height 118px
+			color #fff9a1
+			font-size 16px
+			line-height 24px
+			padding 18px 20px 10px 37px
+			background url('../img/hero-tip-bubble.png') no-repeat 50% 50%
+			
+			&:before
+				content ''
+				position absolute
+				left -23px
+				bottom -44px
+				width 46px
+				height 58px
+				background url('../img/hero-tip-line.svg') no-repeat 0 100%
+				
+.title-h2
+	color colorBlue
+	font-size 36px
+	line-height 40px
+	font-weight 600
+	font-family f-spectral
+	text-align center
+	letter-spacing -1px
+	padding 0
+	margin 0 0 44px
+
+.free
+	background url('../img/free-bg.png') no-repeat 50% 50%
+	background-size cover
+	
+	&__row
+		max-width 1300px
+		padding 57px 30px 34px
+		margin 0 auto
+		
+	&__grid
+		font-size 0
+		margin 0 -15px
+		
+	&__col
+		display inline-block
+		width 50%
+		padding 0 15px
+		
+	&--pic
+		position relative
+		width 100%
+		width calc(100% + 25px)
+		height auto
+		margin -37px 0 0 -83px
+		
+	&-doc
+		display flex
+		position relative
+		z-index 1
+		align-items center
+		margin -56px 0 30px 35px
+	
+		&--pic
+			position relative
+			overflow hidden
+			display inline-block
+			width 137px
+			margin-right 30px
+			background-color #e8e8e8
+			border 4px solid #ffffff
+			border-radius 6px
+			box-shadow 0 3px 7px rgba(0, 0, 0, 0.12)
+			
+			&:after
+				content ''
+				position absolute
+				left 50%
+				top 50%
+				width 45px
+				height 45px
+				margin -22px 0 0 -19px
+				background url('../img/zoom-icon.png') no-repeat 0 0
+				opacity .8
+				transition opacity .2s ease-in
+				
+			&:hover
+				&:after
+					opacity 1
+			
+			img
+				width 100%
+				height auto
+				
+		&--text
+			display inline-block
+			
+			p
+				position relative
+				color #252443
+				font-size 15px
+				line-height 22px
+				font-weight 600
+				margin 0 0 10px
+			
+		
+	&--subtitle
+		display block
+		color colorBlue
+		font-size 24px
+		line-height 30px
+		font-weight bold
+		font-family f-spectral
+		padding 0
+		margin 0 0 29px
+		
+	&__list
+		margin 0 0 30px
+		
+		li
+			position relative
+			font-size 18px
+			line-height 25px
+			padding-left 44px
+			margin 0 0 25px
+			
+			&:before
+				content ''
+				position absolute
+				left 0
+				top 1px
+				width 30px
+				height 24px
+				background url('../img/list-check-icon.png') no-repeat 0 0
+				
+	&-access
+		font-size 0
+		margin 64px 0 30px
+		
+		&--phone
+			display inline-block
+			width 240px
+			font-size 18px
+			font-weight 200
+			padding 10px 22px 12px
+			margin 2px 11px 2px 0
+			border-radius 6px
+			background-color rgba(249, 247, 247, .95)
+			border 1px solid rgba(196, 196, 196, .95)
+			box-shadow inset 0 2px 2px rgba(0, 0, 0, 0.14)
+			
+		&__controls
+			display inline-block
+			width 295px
+			
+		&--tip
+			display block
+			color #252443
+			font-size 12px
+			line-height 18px
+			text-align center
+			margin 13px 0 0
+		
+			a
+				color #252443
+				text-decoration underline
+				
+				&:hover
+					text-decoration none
+			
+		.btn-standart
+				width 100%
+				font-size 16px
+				line-height 24px
+				padding 11px 10px 13px
+				box-shadow 0 4px 0 #830b13
+				
+				&:hover
+					transform translateY(2px)
+					box-shadow none
+					
+	&--message
+		display block
+		width 420px
+		color #252443
+		font-size 16px
+		line-height 24px
+		font-weight 600
+		text-align center
+		padding 14px 25px 18px
+		margin -4px auto 30px
+		border 5px dashed rgba(255,255,255,.75)
+		border-radius 16px
+		
+.program
+	&__row
+		max-width 1300px
+		padding 47px 30px 59px
+		margin 0 auto
+		
+	.title-h2
+		margin 0 0 33px
+		
+	&--subtitle
+		display block
+		font-size 18px
+		line-height 25px
+		text-align center
+		padding 0
+		margin 0 0 25px
+		
+	&__grid
+		font-size 0
+		margin 0 -15px
+		margin-top 45px
+		
+	&__col
+		display inline-block
+		width 50%
+		padding 0 15px
+		
+	&-level
+		max-width 580px
+		text-align center
+		margin 0 0 30px
+		
+		&--title
+			display block
+			color #39368b
+			font-size 17px
+			line-height 25px
+			font-weight 600
+			margin 0 0 19px
+			
+		&__graph
+			position relative
+	
+		&--pic
+			position relative
+			width 100%
+			width calc(100% + 323px)
+			margin 0 0 0 -200px
+			
+		&__ages
+			position absolute
+			left 0
+			bottom 37px
+			z-index 1
+			width 100%
+			font-size 0
+			padding 0 0 7px
+			margin 0 0 0 -5px
+			border-bottom 1px solid #f5f5f5
+			
+			li
+				display inline-block
+				min-width 110px
+				font-size 14px
+				line-height 20px
+				padding 0 15px
+				
+	&__list
+		max-width 480px
+		margin 31px 0 0
+		
+		li
+			position relative
+			min-height 75px
+			font-size 18px
+			line-height 25px
+			padding-left 74px
+			margin 0 0 41px
+			
+			&:before
+				content ''
+				position absolute
+				left 0
+				top 1px
+				width 56px
+				height 66px
+				background url('../img/apple-icon.png') no-repeat 0 0
+				
+	&--tip
+		display block
+		color #a9a9a9
+		font-size 14px
+		line-height 21px
+		text-align center
+		margin 18px 0 30px
