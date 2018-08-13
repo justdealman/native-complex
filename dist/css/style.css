@@ -806,3 +806,127 @@ button::-moz-focus-inner {
 	text-align: center;
 	margin: 18px 0 30px;
 }
+.slick-prev,
+.slick-next {
+	position: absolute;
+	top: 50%;
+	z-index: 5;
+	width: 48px;
+	height: 48px;
+	cursor: pointer;
+	margin-top: -24px;
+	background: #2e2b6a;
+	border-radius: 50%;
+	-webkit-box-shadow: 3px 4px 8px rgba(0,0,0,0.15);
+	box-shadow: 3px 4px 8px rgba(0,0,0,0.15);
+}
+.slick-prev:before,
+.slick-next:before {
+	content: '';
+	position: absolute;
+	width: 21px;
+	height: 15px;
+	margin-top: -8px;
+	background-repeat: no-repeat;
+	background-image: url("../img/slick-arrows.png");
+	background-size: 200% 100%;
+}
+.slick-prev:before {
+	left: 14px;
+	background-position: 0 0;
+}
+.slick-next:before {
+	right: 14px;
+	background-position: 100% 0;
+}
+.online {
+	background: #f5f5f5;
+}
+.online__row {
+	max-width: 1300px;
+	text-align: center;
+	padding: 65px 30px 28px;
+	margin: 0 auto;
+}
+.online .title-h2 {
+	margin: 0 0 24px;
+}
+.online--subtitle {
+	display: block;
+	font-size: 18px;
+	line-height: 25px;
+	margin: 0 0 25px;
+}
+.online__slider {
+	position: relative;
+	margin: 48px 0 40px;
+}
+.online__slider .slick-list {
+	overflow: hidden;
+	background: #fff;
+	border-radius: 20px;
+	-webkit-box-shadow: 0 2px 13px rgba(0,0,0,0.03);
+	box-shadow: 0 2px 13px rgba(0,0,0,0.03);
+}
+.online__slider .slick-prev {
+	left: -20px;
+}
+.online__slider .slick-next {
+	right: -20px;
+}
+.online__item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 0;
+}
+.online__col {
+	display: inline-block;
+	width: 50%;
+	min-height: 472px;
+}
+.online__content {
+	text-align: left;
+	padding: 40px 60px 20px 60px;
+}
+.online__content--title {
+	display: block;
+	color: #1e2244;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	font-family: 'Spectral SC', sans-serif;
+	margin: 0 0 36px;
+}
+.online__list {
+	margin: 0;
+}
+.online__list li {
+	position: relative;
+	font-size: 18px;
+	line-height: 25px;
+	padding-left: 44px;
+	margin: 0 0 20px;
+}
+.online__list li:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 1px;
+	width: 30px;
+	height: 24px;
+	background: url("../img/list-check-icon.png") no-repeat 0 0;
+}
+.online .btn-standart {
+	font-size: 16px;
+	line-height: 24px;
+	padding: 11px 29px;
+	margin: 0 0 40px;
+	-webkit-box-shadow: 0 4px 0 #830b13;
+	box-shadow: 0 4px 0 #830b13;
+}
+.online .btn-standart:hover {
+	-webkit-transform: translateY(2px);
+	-ms-transform: translateY(2px);
+	transform: translateY(2px);
+}

@@ -726,3 +726,121 @@ button
 		line-height 21px
 		text-align center
 		margin 18px 0 30px
+		
+.slick-prev
+.slick-next
+	position absolute
+	top 50%
+	z-index 5
+	width 48px
+	height 48px
+	cursor pointer
+	margin-top -24px
+	background #2e2b6a
+	border-radius 50%
+	box-shadow 3px 4px 8px rgba(0, 0, 0, 0.15)
+	
+	&:before
+		content ''
+		position absolute
+		width 21px
+		height 15px
+		margin-top -8px
+		background-repeat no-repeat
+		background-image url('../img/slick-arrows.png')
+		background-size 200% 100%
+		
+.slick-prev
+	&:before
+		left 14px
+		background-position 0 0 
+		
+.slick-next
+	&:before
+		right 14px
+		background-position 100% 0 
+
+.online
+	background #f5f5f5
+	
+	&__row
+		max-width 1300px
+		text-align center
+		padding 65px 30px 28px
+		margin 0 auto
+		
+	.title-h2
+		margin 0 0 24px
+		
+	&--subtitle
+		display block
+		font-size 18px
+		line-height 25px
+		margin 0 0 25px
+		
+	&__slider
+		position relative
+		margin 48px 0 40px
+		
+		.slick-list
+			overflow hidden
+			background #ffffff
+			border-radius 20px
+			box-shadow 0 2px 13px rgba(0, 0, 0, 0.03)
+		
+		.slick-prev
+			left -20px
+		
+		.slick-next
+			right -20px
+			
+	&__item
+		display flex
+		font-size 0
+		
+	&__col
+		display inline-block
+		width 50%
+		min-height 472px
+			
+	&__content
+		text-align left
+		padding 40px 60px 20px 60px
+		
+		&--title
+			display block
+			color colorBlue
+			font-size 24px
+			line-height 30px
+			font-weight bold
+			font-family f-spectral
+			margin 0 0 36px
+			
+	&__list
+		margin 0
+		
+		li
+			position relative
+			font-size 18px
+			line-height 25px
+			padding-left 44px
+			margin 0 0 20px
+			
+			&:before
+				content ''
+				position absolute
+				left 0
+				top 1px
+				width 30px
+				height 24px
+				background url('../img/list-check-icon.png') no-repeat 0 0
+				
+	.btn-standart
+		font-size 16px
+		line-height 24px
+		padding 11px 29px
+		margin 0 0 40px
+		box-shadow 0 4px 0 #830b13
+		
+		&:hover
+			transform translateY(2px)
