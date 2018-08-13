@@ -1627,7 +1627,232 @@ button
 			.btn
 				min-width 246px
 				opacity .5
+
+
+				
+.form
+	input
+		width 100%
+		font-size 18px
+		font-weight 200
+		padding 10px 22px 12px
+		margin 2px 11px 2px 0
+		border-radius 6px
+		background-color rgba(249, 247, 247, .95)
+		border 1px solid rgba(196, 196, 196, .95)
+		box-shadow inset 0 2px 2px rgba(0, 0, 0, 0.14)
+		
+	&--tip
+		display block
+		color #ffffff
+		font-size 12px
+		line-height 18px
+		text-align center
+		margin 13px 0 0
+	
+		a
+			color #ffffff
+			text-decoration underline
 			
+			&:hover
+				text-decoration none
+			
+	.btn-standart
+			width 100%
+			font-size 16px
+			line-height 24px
+			padding 11px 10px 13px
+			box-shadow 0 4px 0 #830b13
+			
+			&:hover
+				transform translateY(2px)
+				box-shadow none
+				
+.request
+	background-color #2e2b6a
+	background-image linear-gradient(-45deg, rgba(93, 71, 218, 0.3) 0%, rgba(93, 71, 218, 0) 100%)
+	
+	&__row
+		position relative
+		max-width 1300px
+		font-size 0
+		color #ffffff
+		padding 45px 30px 0
+		margin 0 auto
+	
+	&--title
+		display block
+		font-size 28px
+		line-height 32px
+		font-family f-spectral
+		text-align center
+		letter-spacing -1px
+		margin 0 0 29px
+		
+	&--description
+		display inline-block
+		width 285px
+		font-size 16px
+		line-height 24px
+		padding 0 0 30px
+		
+	&--pic
+		display inline-block
+		width 183px
+		height 184px
+		margin 10px 11px 0 -33px
+		background url('../img/request-pic.png') no-repeat 0 0
+		
+	&-form
+		display inline-block
+		width calc(100% - 446px)
+		padding 0 0 30px
+		margin-right -10px
+		margin-top 16px
+		
+		&__item
+			display inline-block
+			width 240px
+			margin 0 15px 15px 0
+			
+		&__controls
+			display inline-block
+			width 283px
+			margin-right -10px
+			
+			.btn
+				width 100%
+				margin 0
+				
+		&--welcome
+			display block
+			font-size 18px
+			line-height 24px
+			margin 10px 0 0
+			
+.process
+	overflow hidden
+
+	&__row
+		position relative
+		max-width 1300px
+		padding 64px 30px 30px
+		margin 0 auto
+		
+		&:before
+			content ''
+			position absolute
+			left -46px
+			bottom 0
+			width 366px
+			height 382px
+			background url('../img/process-before.png') no-repeat 0 0
+		
+		&:after
+			content ''
+			position absolute
+			right -42px
+			bottom 0
+			width 274px
+			height 245px
+			background url('../img/process-after.png') no-repeat 0 0
+		
+	.title-h2
+		margin-bottom 31px
+		
+	&--subtitle
+		display block
+		font-size 18px
+		line-height 25px
+		text-align center
+		margin 0 0 25px
+		
+.circle
+	position relative
+	z-index 10
+	display block
+	width 573px
+	height 633px
+	text-align center
+	margin 47px auto 50px
+	background url('../img/circle-bg.png') no-repeat 50% 50%
+
+	&--center
+		position absolute
+		left 50%
+		top 50%
+		display block
+		width 220px
+		height 220px
+		color #ffffff
+		font-size 18px
+		line-height 25px
+		padding 77px 20px 20px
+		margin -110px 0 0 -110px
+		background #2e2b6a
+		border-radius 50%
+		
+		&:before
+			content ''
+			position absolute
+			left 50%
+			top 22px
+			width 83px
+			height 50px
+			margin-left -42px
+			background url('../img/rhino-icon.png') no-repeat 0 0
+			
+	&--item
+		position absolute
+		display flex
+		align-items center
+		width 160px
+		height 160px
+		font-size 18px
+		line-height 25px
+		padding 9px 15px 19px
+		background-color #e8e8e8
+		background-image linear-gradient(to right, #ffeeee 0%, #ddefbb 100%)
+		border-radius 50%
+		
+		p
+			width 100%
+			margin 0
+		
+		span
+			display block
+			color #ffffff
+			font-size 36px
+			line-height 36px
+			font-weight 600
+			font-family f-spectral
+			
+		&_1
+			left 50%
+			top 0
+			margin-left -80px
+			
+		&_2
+			right 0
+			top 115px
+			
+		&_3
+			right 0
+			bottom 115px
+			
+		&_4
+			left 50%
+			bottom 0
+			margin-left -80px
+			
+		&_5
+			left 0
+			bottom 115px
+			
+		&_6
+			left 0
+			top 115px
+		
 @media (min-width 1921px)
 	.reviews
 		&:before
