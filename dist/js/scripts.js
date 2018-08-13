@@ -56,7 +56,18 @@ $(function() {
 		dots: false,
 		infinite: true,
 		cssEase: 'ease',
-		speed: 500,
+		speed: 300,
+		adaptiveHeight: true
+	});
+	
+	$('.teachers__slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: false,
+		infinite: true,
+		cssEase: 'ease',
+		speed: 300,
 		adaptiveHeight: true
 	});
 

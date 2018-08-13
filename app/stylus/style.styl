@@ -1337,6 +1337,297 @@ button
 			line-height 25px
 			margin 0
 			
+.teachers
+	position relative
+	
+	&:after
+		content ''
+		position absolute
+		right 0
+		bottom 0
+		z-index 1
+		width 206px
+		height 203px
+		background url('../img/bear-icon.png') no-repeat 100% 100%
+		
+	&__row
+		position relative
+		max-width 1300px
+		padding 70px 30px 24px
+		margin 0 auto
+		
+	.title-h2
+		margin-bottom 24px
+		
+	&--subtitle
+		display block
+		color #010101
+		font-size 18px
+		line-height 25px
+		text-align center
+		margin 0 0 25px
+		
+	&__slider
+		position relative
+		font-size 0
+		padding 0 47px
+		margin 24px 0 40px
+		
+		&:before
+			content ''
+			position absolute
+			left -42px
+			top -27px
+			z-index 10
+			width 132px
+			height 138px
+			background url('../img/rat-icon.png') no-repeat 0 0
+		
+		.slick-list
+			padding 20px 0
+		
+		.slick-prev
+			left -20px
+		
+		.slick-next
+			right -20px
+		
+	&__item
+		display inline-block
+		width 33.33%
+		padding 0 18px
+		
+	&-person
+		overflow hidden
+		position relative
+		display block
+		height 500px
+		background #ffffff
+		border-radius 6px
+		box-shadow -10px 6px 12px rgba(0, 0, 0, 0.15)
+		
+		&__content
+			position absolute
+			left 0
+			bottom 0
+			width 100%
+			min-height 155px
+			color #ffffff
+			padding 17px 30px 19px
+			background rgba(46,43,106,.9)
+			
+			p
+				font-size 18px
+				line-height 27px
+				margin 0
+		
+		&--name
+			display block
+			font-size 24px
+			line-height 28px
+			font-weight 600
+			font-family f-spectral
+			letter-spacing -1px
+			margin 0 0 10px
+			
+.ask
+	overflow hidden
+	background-color #fffae9
+	background-image linear-gradient(to right, #ffeeee 0%, #ddefbb 100%)
+
+	&__row
+		position relative
+		max-width 1300px
+		text-align center
+		padding 27px 30px 14px
+		margin 0 auto
+		
+		&:after
+			content ''
+			position absolute
+			right -21px
+			bottom 0
+			width 221px
+			height 201px
+			background url('../img/cat-icon.png') no-repeat 0 0
+		
+	&-person
+		position absolute
+		left -25px
+		bottom 0
+		width 232px
+		height 297px
+		background url('../pic/ask-person.png') no-repeat 0 0
+		
+		&__content
+			position absolute
+			left 170px
+			top 7px
+			width 200px
+			text-align left
+			
+		&--name
+			display block
+			font-size 18px
+			line-height 26px
+			margin 0 0 2px
+			
+		&--position
+			display block
+			font-size 15px
+			line-height 22px
+			font-style italic
+
+	&--title
+		display block
+		color colorBlue
+		font-size 28px
+		line-height 32px
+		font-weight 600
+		font-family f-spectral
+		text-align center
+		letter-spacing -1px
+		padding 0
+		margin 0 0 27px
+		
+	&__grid
+		display flex
+		align-items center
+		font-size 0
+		margin 0 95px 5px
+		
+	&__item
+		display inline-block
+		display flex
+		align-items center
+		width calc(100% - 22px)
+		margin 0 11px 22px
+		min-height 103px
+		padding 26px 25px 20px
+		background rgba(255,255,255,.9)
+		border-radius 8px
+		box-shadow 0 0 11px rgba(190, 198, 115, 0.24)
+		
+		p
+			width 100%
+			font-size 18px
+			line-height 25px
+			text-align center
+			margin 0
+	
+	.btn
+		min-width 204px
+		margin 0 0 10px
+		
+.plan
+	&__row
+		max-width 1300px
+		padding 79px 30px 44px
+		margin 0 auto
+		
+	.title-h2
+		margin-bottom 56px
+	
+	&__grid
+		font-size 0
+		margin 0 -18px
+		
+	&__item
+		display inline-block
+		width 33.33%
+		padding 0 18px
+		margin 0 0 36px
+		
+	&-content
+		position relative
+		color #4a4a4a
+		padding 39px 35px 36px
+		background #f9f9f9
+		border-radius 12px
+		box-shadow 0 0 11px rgba(19, 13, 137, 0.1)
+		transition all .3s ease-in
+		
+		&--icon
+			position absolute
+			display block
+			background-repeat no-repeat
+			background-position 0 0
+			
+			&_1
+				right 23px
+				top 37px
+				width 58px
+				height 48px
+				background-image url('../img/plan-icon-1.png')
+			
+			&_2
+				right -13px
+				top -37px
+				width 96px
+				height 189px
+				background-image url('../img/plan-icon-2.png')
+			
+			&_3
+				right 0
+				top -6px
+				width 88px
+				height 170px
+				background-image url('../img/plan-icon-3.png')
+		
+		&:hover
+			margin-top -16px
+			margin-bottom 16px
+			background-color #ffffff
+			box-shadow 0 0 11px rgba(19, 13, 137, 0.23)
+			
+			& ^[-1]--title
+				color #1e2244
+				
+			.btn
+				opacity 1
+		
+		&--title
+			display block
+			font-size 28px
+			line-height 32px
+			font-weight 500
+			font-family f-spectral
+			letter-spacing -1px
+			margin 0 0 9px
+			
+		&--price
+			display block
+			font-size 24px
+			line-height 30px
+			margin 0 0 18px
+			
+		&__list
+			margin 0 0 21px
+			
+			li
+				position relative
+				font-size 15px
+				line-height 21px
+				padding-left 15px
+				margin 0 0 8px
+				
+				&:before
+					content ''
+					position absolute
+					left 0
+					top 8px
+					width 6px
+					height 6px
+					background #e30e1c
+					
+		&__controls
+			text-align center
+			margin 55px 0 0
+			
+			.btn
+				min-width 246px
+				opacity .5
+			
 @media (min-width 1921px)
 	.reviews
 		&:before
