@@ -103,7 +103,7 @@ html(lang='ru')
 						.online__col
 							img.img-cover(src='./pic/online-1.jpg', width='620', height='472', alt='')
 				button.btn.btn-standart Записаться на бесплатный урок
-		.base
+		section.base
 			.base__row
 				h2.title-h2 Через 4 месяца ваш ребенок будет владеть #[br] английским на уверенном базовом уровне
 				span.base--subtitle За счет уникальной авторской технологии Native Class, разработанной совместно с #[br] носителями английского языка
@@ -138,7 +138,7 @@ html(lang='ru')
 						button.btn.btn-standart.btn-standart_mini Записаться на бесплатный урок
 					.base-request--pic.scale
 						img.img-contain(src='./pic/base-request.png', width='545', height='305', alt='')
-		.method
+		section.method
 			.method__row
 				h2.title-h2 Вашему ребенку становится действительно #[br] интересно изучать английский
 				span.method--subtitle В программе обучения мы охватили только самые близкие тематики для ребенка: #[br] от семьи и игрушек, до времен года и интересных животных
@@ -163,7 +163,25 @@ html(lang='ru')
 					.method-about.scale
 						span.method-about--message Мы вовлекаем вашего ребенка в процесс обучения через дружеское и веселое общение, и помогаем малышу осваиваться на уроках
 						img.img.contain(src='./pic/method-about.png', width='721', height='369', alt='')
-		.map
+		section.free.free_custom
+			.free__row
+				h2.title-h2 Запишитесь на первый бесплатный урок #[br] по английскому
+				.free__grid
+					.free__col
+						img.free--pic(src='./img/free-pic-2.png', width='577', height='415', alt='')
+					.free__col
+						.free--subtitle На первом уроке:
+						ul.free__list
+							li Вы и ребенок познакомитесь с преподавателем и форматом обучения
+							li Преподаватель определит текущий уровень и предложит программу, интересную для ребенка
+							li Ребенок освоит первые базовые элементы английского языка и начнет их применять
+						.free-access
+							input.free-access--phone(type='text', placeholder='Ваш телефон *')
+							.free-access__controls
+								button.btn.btn-standart Получить доступ к уроку
+								span.free-access--tip Нажимая, Вы принимаете условия #[a(href='javascript:void(0);') Соглашения]
+						span.free--message Куратор курса перезвонит Вам, чтобы уточнить точную дату проведения урока
+		section.map
 			.map-certificate
 				.map-certificate--logo
 					img.img-cover(src='./img/ies-logo.png', width='126', height='140', alt='')

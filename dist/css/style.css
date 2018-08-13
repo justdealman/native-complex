@@ -630,6 +630,7 @@ button::-moz-focus-inner {
 	margin: 0 0 29px;
 }
 .free__list {
+	max-width: 460px;
 	margin: 0 0 30px;
 }
 .free__list li {
@@ -1320,4 +1321,20 @@ button::-moz-focus-inner {
 }
 .map-contacts p a[href^='mailto:']:hover {
 	text-decoration: none;
+}
+.free_custom {
+	padding-bottom: 62px;
+	background-color: #fffae9;
+	background-image: -webkit-gradient(linear, left top, right top, from(#fee), to(#ddefbb));
+	background-image: -o-linear-gradient(left, #fee 0%, #ddefbb 100%);
+	background-image: linear-gradient(to right, #fee 0%, #ddefbb 100%);
+}
+.free--pic {
+	width: 100%;
+	width: calc(100% - 13px);
+	margin-top: -5px;
+	margin-left: 0;
+}
+.free-access {
+	margin-top: 39px;
 }
